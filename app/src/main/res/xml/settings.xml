@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--ListPreference
+        android:title="Edit Trucks Numbers"
+        android:entries="@array/truck_numbera"
+        android:summary="Edit truck numbers"
+        android:entryValues="@array/measurement_values"
+        android:key="measure_key"
+        android:defaultValue="Kilometer"
+        />
+
+    <ListPreference
+        android:title="@string/radius_selector"
+        android:entries="@array/radius_entries"
+        android:summary="@string/radius_selection"
+        android:entryValues="@array/radius_values"
+        android:key="radius_key"
+        android:defaultValue="0.5"/-->
+    <Preference
+        android:title="Create/Edit a list of trucks"
+        android:key="edit_key"
+        />
+
+    <Preference
+        android:title="Change static IP"
+        android:key="ip_key"
+        />
+
+    <Preference
+        android:title="Screen lock timeout"
+        android:key="timeout_key"
+        />
+
+    <Preference
+        android:title="Device password"
+        android:key="device_password_key"
+        />
+
+</PreferenceScreen>

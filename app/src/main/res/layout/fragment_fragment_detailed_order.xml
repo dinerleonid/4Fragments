@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_detail"
+        >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:text="Order #"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="130dp"
+                android:textSize="24dp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:text="Name"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:layout_width="130dp"
+                android:textSize="24dp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:text="Address"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="130dp"
+                android:textSize="24dp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:text="Phone #"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="130dp"
+                android:textSize="24dp"
+                android:textStyle="bold|italic" />
+
+            <!--TextView
+                android:text="Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:text="Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                /-->
+
+            <TextView
+                android:text="Type"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="130dp"
+                android:textSize="24dp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:text="Amount Ordered"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="130dp"
+                android:textSize="24dp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:text="Amount - Delivered"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="130dp"
+                android:textSize="24dp"
+                android:textStyle="bold|italic" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:id="@+id/detailOrderNumber"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="130dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:id="@+id/detailCustomerName"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="130dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:id="@+id/detailCustomerAddress"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="130dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:id="@+id/detailCustomerPhoneNumber"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="130dp"
+                android:textSize="20dp" />
+
+            <!--TextView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/deliveryDate"
+                android:layout_weight="1"
+                android:maxLength="30"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/deliveryTime"
+                android:layout_weight="1"
+                android:maxLength="30"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp" /-->
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:id="@+id/detailDeliveryType"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="130dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:id="@+id/detailOrderAmount"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="130dp"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:id="@+id/detailDeliveredAmount"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+                android:textColor="#0000ff"
+                android:layout_width="130dp"
+                android:textSize="20dp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:text="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSave"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="300dp" />
+
+    </FrameLayout>
+</LinearLayout>
